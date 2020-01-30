@@ -14,9 +14,19 @@ class Markdown extends React.Component {
     let html = snarkdown(full);
 
     return (
-      <div>
+      <div
+        style={{
+          backgroundColor: "#bbded6",
+          fontFamily: "sans-serif",
+          paddingTop: "1rem",
+          paddingBottom: "1rem",
+          marginRight: "7rem",
+          marginLeft: "7rem",
+          borderRadius: "0.5rem"
+        }}
+      >
         <h1>Markdown component</h1>
-        <div>{ReactHtmlParser(html)}</div>
+        <div style={{ fontStyle: "italic" }}>{ReactHtmlParser(html)}</div>
       </div>
     );
   }

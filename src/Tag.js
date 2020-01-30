@@ -43,7 +43,16 @@ class Tag extends React.Component {
     }
 
     return (
-      <div>
+      <div
+        style={{
+          fontFamily: "sans-serif",
+          backgroundColor: "#f1f9f9",
+          marginLeft: "7rem",
+          marginRight: "7rem",
+          paddingTop: "1rem",
+          marginTop: "1rem"
+        }}
+      >
         <h1>Tag Component</h1>
         {rendering()}
       </div>
